@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pretty Little Thing - IcyCoupons.com</title>
+    <link rel="stylesheet" href="css/icon-font.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="single-offer-page">
+<div class="lockerBackground no-instpect" style="display: none;"></div>
+<div class="lockerPopup animated bounceInDown no-instpect" style="display:none;">
+    <div class="header">
+        PrettyLittleThing $100 Promo Code Unlocker
+    </div>
+    <div class="content">Complete <strong>
+        <span id="count">2</span>
+    </strong> of the offers to unlock the content.<br> You will then receive your email in 30 seconds!
+    </div>
+    <div class="links">
+        <ul class="lc-checks">
+            <a href="http://jetparty.net" target="_blank">
+                <li><span class="lc-checks__feature ">Complete To Continue</span></li>
+            </a>
+        </ul>
+    </div>
+    <div class="footer">
+        <div class="sk-folding-cube">
+            <div class="sk-cube1 sk-cube"></div>
+            <div class="sk-cube2 sk-cube"></div>
+            <div class="sk-cube4 sk-cube"></div>
+            <div class="sk-cube3 sk-cube"></div>
+        </div>
+        Offer Incomplete!
+    </div>
+</div>
+<div class="popup-bg animated slideInUp popup-ready"></div>
+<div class="popup-wrap popup-auto-cursor animated slideInUp popup-ready" tabindex="-1" style="overflow: hidden auto">
+    <div class="popup-container popup-inline-holder">
+        <div class="popup-content">
+            <div class="modal-offer-outer-frame animated bounceIn animation-delay-400">
+                <div class="modal-offer-content">
+                    <h1 id="modal-offer-value" class="modal-offer-value">
+                        SAVE $$
+                    </h1>
+                    <h2 id="modal-offer-title" class="modal-offer-title">FREE Shipping SITEWIDE!</h2>
+                    <h5 id="modal-offer-stats" class="modal-offer-stats">Verified 3 days ago • 400 uses today</h5>
+                    <div class="offer-separator"></div>
+                    <div class="b-r">
+                        <div class="b-l" style="display: block">
+                            <div class="locked-code-wrapper">
+                                <span>Pret*****</span>
+                            </div>
+                            <div class="modal-button-wrapper">
+                                <div class="modal-button">
+                                    Unlock Code
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-loader" style="display: none">
+                            <ul class="b-loader-item">
+                                <li>
+                                    <div class="ProgressBar ProgressBar --animateAll" data-progress="0">
+                                        <svg class="ProgressBar-contentCircle">
+                                            <circle transform="rotate(-90, 100, 100)" class="ProgressBar-background"
+                                                    cx="100" cy="100" r="95"></circle>
+                                            <circle transform="rotate(-90, 100, 100)" class="ProgressBar-circle"
+                                                    cx="100" cy="100" r="95"
+                                                    style="stroke-dasharray: 597px; stroke-dashoffset: 598px;"></circle>
+                                        </svg>
+                                        <span class="ProgressBar-percentage ProgressBar-percentage--count"></span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="unlocking-string">Unlocking code...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<header>
+    <div class="container">
+        <div class="header-content">
+            <div class="logo-wrapper">
+                <img src="img/logo.png" class="img-fluid logo-img" alt="IcyCoupons Logo">
+            </div>
+            <div class="search-wrapper">
+                <div class="search-form-wrapper">
+                    <form id="search-form">
+                        <div class="search-input-wrapper">
+                            <i class="fa fa-search"></i>
+                            <input type="text" class="search" id="search" value="" placeholder="Search Deals...">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="header-nav-wrapper">
+                <ul id="header-nav">
+                    <li class="open-sweet">Categories<i class="fa fa-angle-down"></i></li>
+                    <li class="open-sweet">Log In</li>
+                    <li class="nav-button open-sweet">Join for Free</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="single-offer-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="sidebar-wrapper">
+                    <div class="sidebar-content">
+                        <div class="offer-image-wrapper">
+                            <img src="img/single-offer/prettylittlething.jpg" class="img-fluid single-offer-img">
+                        </div>
+                        <div class="sidebar-separator"></div>
+                        <div class="offer-rating-wrapper">
+                            <div class="rating-wrapper">
+                                <span class="text-rating">4.5</span>
+                                <span class="rating">
+                                   <i class="fa fa-star" aria-hidden="true"></i>
+                                   <i class="fa fa-star" aria-hidden="true"></i>
+                                   <i class="fa fa-star" aria-hidden="true"></i>
+                                   <i class="fa fa-star" aria-hidden="true"></i>
+                                   <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                               </span>
+                                <span class="rating-amount">(385)</span>
+                            </div>
+                            <span class="rating-note"><strong>Note:</strong> Rating is only available for registered users.</span>
+                        </div>
+                    </div>
+                    <div class="sidebar-separator"></div>
+                    <div class="offer-description-wrapper">
+                        <h4>About Pretty Little Thing</h4>
+                        <div class="offer-description">
+                            <p>
+                                Pretty Little Thing is a UK-based fashion retailer, aimed at 16-24 year old women.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="sidebar-separator"></div>
+                    <div class="offer-saving-tips">
+                        <h5>Savings Tips:</h5>
+                        <p>Up to 60% Off Select Styles - Join The Pretty Little Thing Mailing List To Receive Insider Info on Sales & New Arrivals</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="offer-wrapper">
+                    <div class="offer-content">
+                        <div class="offer-title-wrapper">
+                            <h1>Pretty Little Thing's Coupons & Deals</h1>
+                            <h5>Save with Pretty Little Thing's Offers.</h5>
+                        </div>
+                        <div class="offers">
+                            <div class="offer-row-item">
+                                <div class="offer-row-item-content">
+                                    <div class="offer-row-value">
+                                        <span class="value-text-big">$100</span> <span
+                                            class="value-text-big break-line">OFF</span>
+                                    </div>
+                                    <div class="offer-row-content">
+                                        <div class="offer-row-content-type">Code</div>
+                                        <div class="offer-row-content-description">$100 OFF Your Next Checkout with Pretty Little Thing
+                                        </div>
+                                        <div class="offer-row-content-stats">Verified 1 day ago • 13k uses today</div>
+                                    </div>
+                                    <div class="offer-row-button-wrapper">
+                                        <div class="offer-row-button">
+                                            Show Coupon Code
+                                            <div class="button-decor-1"></div>
+                                            <div class="button-decor-2"></div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="offer-row-item">
+                                <div class="offer-row-item-content">
+                                    <div class="offer-row-value">
+                                        <span class="value-text-medium">50%</span> <span
+                                            class="value-text-big break-line">OFF</span>
+                                    </div>
+                                    <div class="offer-row-content">
+                                        <div class="offer-row-content-type">Sale</div>
+                                        <div class="offer-row-content-description">50% OFF All Dresses
+                                        </div>
+                                        <div class="offer-row-content-stats">Verified 2 days ago • 2k uses today</div>
+                                    </div>
+                                    <div class="offer-row-button-wrapper">
+                                        <div class="offer-row-button">
+                                            Show Coupon Code
+                                            <div class="button-decor-1"></div>
+                                            <div class="button-decor-2"></div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="offer-row-item">
+                                <div class="offer-row-item-content">
+                                    <div class="offer-row-value">
+                                        <span class="value-text-medium">SAVE</span> <span
+                                            class="value-text-big break-line">$$</span>
+                                    </div>
+                                    <div class="offer-row-content">
+                                        <div class="offer-row-content-type">Code</div>
+                                        <div class="offer-row-content-description">FREE Shipping SITEWIDE!</div>
+                                        <div class="offer-row-content-stats">Verified 3 days ago • 400 uses today</div>
+                                    </div>
+                                    <div class="offer-row-button-wrapper">
+                                        <div class="offer-row-button">
+                                            Show Coupon Code
+                                            <div class="button-decor-1"></div>
+                                            <div class="button-decor-2"></div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="offer-row-item">
+                                <div class="offer-row-item-content">
+                                    <div class="offer-row-value">
+                                        <span class="value-text-medium">70%</span> <span
+                                            class="value-text-big break-line">OFF</span>
+                                    </div>
+                                    <div class="offer-row-content">
+                                        <div class="offer-row-content-type">Sale</div>
+                                        <div class="offer-row-content-description">70% OFF on Selected Sale Items</div>
+                                        <div class="offer-row-content-stats">Verified Today • 500 uses today</div>
+                                    </div>
+                                    <div class="offer-row-button-wrapper">
+                                        <div class="offer-row-button">
+                                            Show Coupon Code
+                                            <div class="button-decor-1"></div>
+                                            <div class="button-decor-2"></div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="footer-content">
+        <div class="container">
+            <img src="img/logo.png" class="img-fluid footer-logo-img" alt="IcyCoupons Logo">
+            <ul class="footer-nav">
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Sitemap</a></li>
+            </ul>
+            <ul class="footer-nav footer-social-nav">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            </ul>
+            <span class="copyright">©2020 IcyCoupons.com</span>
+        </div>
+    </div>
+    <div class="trademark-content">
+        <div class="container">
+            Third-party trademarks are the property of their respective third-party owners.<br>
+            Presence of a third-party trademark does not mean that IcyCoupons has any relationship with that third-party
+            or that the third-party endorses IcyCoupons or its services.
+        </div>
+    </div>
+</footer>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/sweetalert2.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
